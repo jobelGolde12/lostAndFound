@@ -1,0 +1,7 @@
+body{
+    font-family: 'Sansation', sans-serif;
+}
+:root{
+    --clr-primary: #fff;
+    --clr-secondary: #333;
+}
