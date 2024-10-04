@@ -5,3 +5,6 @@ body{
     --clr-primary: #fff;
     --clr-secondary: #333;
 }
+html{
+    scroll-behavior: smooth;
+}
