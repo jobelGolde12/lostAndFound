@@ -1,4 +1,7 @@
 
+html{
+    scroll-behavior: smooth !important;
+}
 section{
     width: 100vw;
     height: 100vh;
@@ -100,57 +103,150 @@ section{
 
 
 /* For about us  */
-.about-hero-section {
+.stats-section {
     padding: 60px 0;
   }
-  .hero-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .hero-subtitle {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
+  
   .stats-card {
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6 {
+    display: flex;
+  }
+  
+  .stats-card img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
   .stats-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
+  
   .stats-label {
     font-size: 1rem;
     color: #6c757d;
+    margin-top: 10px;
   }
-  .register-btn {
-    background-color: #0d6efd;
-    color: white;
-    border-radius: 50px;
-    padding: 10px 30px;
-  }
-  .navbar-brand {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
+  
   .custom-container {
     max-width: 1200px;
   }
-  .stats-section .container .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+  
 
-.stats-section .container .row .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-  .about-image-container .about-image{
-    position: relative;
-    max-height: 400px;
-    width: 100%;
+  
+  .footer {
+    background-color: #1f1f1f;
+    padding: 40px 0;
+    color: #fff;
+  }
+  
+  .footer .logo {
+    width: 150px; /* Adjust logo width accordingly */
+  }
+  
+  .footer h5 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .footer .list-unstyled a {
+    color: #999;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .footer .list-unstyled a:hover {
+    color: #ffffff;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .subscribe-form input {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  .subscribe-form button {
+    background-color: #4f3ce4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+  }
+  
+ 
+  
+
+@media (max-width: 768px) {
+    .about-image-container{
+        margin-bottom: 5rem;
+    }
+    .stats-card img {
+      width: 40%;
+    }
+  
+    .stats-title {
+      font-size: 1rem;
+    }
+  
+    .stats-label {
+      font-size: 0.9rem;
+    }
+
+    .subscribe-form {
+        justify-content: center;
+      }
+    
+      .subscribe-form input {
+        width: 70%;
+      }
+    
+      .footer .text-md-end {
+        text-align: center;
+      }
   }

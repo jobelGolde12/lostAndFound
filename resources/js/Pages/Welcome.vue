@@ -6,7 +6,7 @@
         <div class="navbar d-flex flex-row justify-content-between align-items-center px-3">
             <div class="logo"><h4 class="text-dark">Lost And Found</h4></div>
             <div class="links d-flex flex-row gap-4 align-items-center">
-                <a href="#" class="text-dark text-decoration-none">About</a>
+                <a href="#about" class="text-dark text-decoration-none">About</a>
                 <a href="#" class="text-dark text-decoration-none">Contact</a>
                 <a href="#" class="text-dark text-decoration-none">Login</a>
                 <a href="#" class=" text-decoration-none bg-dark text-light px-2 py-1 signup-link">Signup</a>
@@ -64,50 +64,125 @@
                             </div>
                             </div>
                         </div>
-
-  
-                                 <!-- Todo ma butang image                -->
-                            <div class="stats-section">
-                                <h1 class="text-dark fw-bolder mt-5 mb-3">How It Works?</h1>
-                                <div class="container custom-container">
-                                <div class="row">
-                                    <!-- Card 1 -->
-                                    <div class="col-lg-3 col-md-6 mb-5">
-                                    <div class="stats-card">
-                                        <div class="stats-title">Report a Lost Item</div>
-                                        <div class="stats-label text-left">If you have lost something, you can post details about your missing item, including a description, last known location, and contact information.</div>
-                                    </div>
-                                    </div>
-                                    <!-- Card 2 -->
-                                    <div class="col-lg-3 col-md-6 mb-5">
-                                    <div class="stats-card">
-                                        <div class="stats-title">Report a Found Item</div>
-                                        <div class="stats-label text-left">If you have found something, you can post the details here to help the rightful owner claim their lost property.</div>
-                                    </div>
-                                    </div>
-                                    
-                                    <!-- Card 3 -->
-                                    <div class="col-lg-3 col-md-6 mb-5">
-                                    <div class="stats-card ">
-                                        <div class="stats-title">Browse Lost or Found Listings</div>
-                                        <div class="stats-label text-left">Check the listings to see if your item has been found or if someone is looking for what you found.</div>
-                                    </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 mb-5">
-                                    <div class="stats-card ">
-                                        <div class="stats-title">Reclaim or Return Items</div>
-                                        <div class="stats-label text-left"> Once an item matches, contact the person who found or lost it and arrange the return.</div>
-                                    </div>
-                                    </div>
-
-                                </div>
-                                </div>
-                            </div>
-
             </div>
         </section>
+
+
+        <section id="howItsWork">
+  <div class="stats-section pt-5 mt-5">
+    <h1 class="text-dark text-center fw-bolder pt-5 mb-3">How It Works?</h1>
+    <div class="container custom-container">
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stats-card text-center">
+            <img src="../../images/announce.svg" alt="">
+            <div class="stats-title mt-3">Report a Lost Item</div>
+            <div class="stats-label">Post details about your missing item, including a description, last known location, and contact information.</div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stats-card text-center">
+            <img src="../../images/found.svg" alt="">
+            <div class="stats-title mt-3">Report a Found Item</div>
+            <div class="stats-label">Post details of what you found to help the rightful owner claim their lost property.</div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stats-card text-center">
+            <img src="../../images/brows.svg" alt="">
+            <div class="stats-title mt-3">Browse Lost or Found Listings</div>
+            <div class="stats-label">Check listings to see if your item has been found or if someone is looking for what you found.</div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stats-card text-center">
+            <img src="../../images/claim.svg" alt="">
+            <div class="stats-title mt-3">Reclaim or Return Items</div>
+            <div class="stats-label">Contact the person and arrange the return once an item matches.</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="logo-section">
+          <img src="logo.png" alt="Keletrix Design" class="logo">
+          <p>Site Generator is set of useful templates with fresh layouts.</p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h5>Download</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Windows app</a></li>
+          <li><a href="#">Mac app</a></li>
+          <li><a href="#">Linux app</a></li>
+          <li><a href="#">Desktop app</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Products</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Web</a></li>
+          <li><a href="#">App</a></li>
+          <li><a href="#">Software</a></li>
+          <li><a href="#">Ecommerce</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <h5>Get in touch</h5>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-md-8 text-md-end">
+        <form class="subscribe-form">
+          <input type="email" class="form-control" placeholder="Enter email address">
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col text-center">
+        <p>&copy; 2022 Glossy, All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
 </template>
 <script>
 import { Head, Link } from '@inertiajs/vue3';
