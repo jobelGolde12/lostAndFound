@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -24,5 +26,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// Route::get('/contact')
+Route::get('/contact', [ContactController::class, 'index'])->name('contactPage');
+Route::post('/contact', [ContactController::class, 'store']);
+
+Route::get('/login', [RegisteredUserController::class, 'index'])->name('login');
+Route::get('/register', [RegisteredUserController::class, 'validate'])->name('register');
+
 require __DIR__.'/auth.php';

@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'contactPage'
+    name: 'ContactPage'
 }
 </script>
 <style lang="">

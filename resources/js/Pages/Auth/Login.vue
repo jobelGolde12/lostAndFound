@@ -29,7 +29,28 @@ const submit = () => {
 };
 </script>
 
+<style scoped>
+.main-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.google{
+    position: relative;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+.go-back{
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+</style>
+
 <template>
+   <div class="main-container bg-light">
+    
     <GuestLayout>
         <Head title="Log in" />
 
@@ -38,6 +59,7 @@ const submit = () => {
         </div>
 
         <form @submit.prevent="submit">
+            <h3 class="text-dark text-center">Login</h3>
             <div>
                 <InputLabel for="email" value="Email" />
 
@@ -69,16 +91,16 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.password" />
             </div>
 
-            <div class="mt-4 block">
+            <!-- <div class="mt-4 block">
                 <label class="flex items-center">
                     <Checkbox name="remember" v-model:checked="form.remember" />
                     <span class="ms-2 text-sm text-gray-600"
                         >Remember me</span
                     >
                 </label>
-            </div>
+            </div> -->
 
-            <div class="mt-4 flex items-center justify-end">
+            <div class="mt-4 d-flex flex-column">
                 <Link
                     v-if="canResetPassword"
                     :href="route('password.request')"
@@ -88,13 +110,20 @@ const submit = () => {
                 </Link>
 
                 <PrimaryButton
-                    class="ms-4"
+                    class="w-100 d-block mt-2"
                     :class="{ 'opacity-25': form.processing }"
                     :disabled="form.processing"
                 >
                     Log in
                 </PrimaryButton>
+
+                <h6 class="text-dark text-center mt-4 mb-4">Or</h6>
+
+                <button class="btn btn-light d-flex flex-row gap-1 justify-content-center align-items-center"> <img src="../../../images/google.png" alt="" class="google d-block"><span class="d-block">Google</span></button>
             </div>
         </form>
     </GuestLayout>
+    <button class="btn btn-dark go-back">Go back</button>
+   </div>
 </template>
+

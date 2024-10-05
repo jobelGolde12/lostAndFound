@@ -5,22 +5,24 @@
         <!-- Navagation bar -->
         <div class="navbar d-flex flex-row justify-content-between align-items-center px-3">
             <div class="logo"><h4 class="text-dark">Lost And Found</h4></div>
-            <div class="links d-flex flex-row gap-4 align-items-center">
-                <a href="#about" class="text-dark text-decoration-none">About</a>
-                <a href="#" class="text-dark text-decoration-none">Contact</a>
-                <a href="#" class="text-dark text-decoration-none">Login</a>
-                <a href="#" class=" text-decoration-none bg-dark text-light px-2 py-1 signup-link">Signup</a>
+            <div class="links d-none d-lg-flex flex-row gap-4 align-items-center">
+                    <a href="#about" class="text-dark text-decoration-none">About</a>
+                    <Link :href="route('contactPage')" class="text-dark text-decoration-none">Contact</Link>
+                    <Link :href="route('login')" class="text-dark text-decoration-none">Login</Link>
+                    <Link :href="route('register')" class=" text-decoration-none bg-dark text-light px-2 py-1 signup-link">Signup</Link>
             </div>
+
+            <div class="bi bi-list fs-1 fw-bolder pointer hover d-block d-lg-none"></div>
         </div>
 
 
         <!-- hero section content  -->
          <section id="hero-content" class=" d-flex flex-column align-items-center justify-content-center bg-light text-dark text-center mt-3">
-                        <h1 class="text-dark">
+                        <h1 class="text-dark text-center">
                             Find and Report Lost or Found <br>
                             Items in Bulan <span class="has-paint text-light">Easily</span>
                         </h1>
-                        <p class="text-dark text-center">Join others in Bulan and report lost or found items with just a few clicks.</p>
+                        <p class="text-dark text-center ">Join others in Bulan and report lost or found items with just a few clicks.</p>
 
                         <div class="action-button container d-flex flex-row align-items-center justify-content-center gap-5 pt-3 px-5">
                             <a href="#" class="text-decoration-none report-lost-item-link px-2 py-2">Report Lost Item <i class="bi bi-arrow-right text-dark"></i></a>
@@ -71,7 +73,7 @@
         <section id="howItsWork">
   <div class="stats-section pt-5 mt-5">
     <h1 class="text-dark text-center fw-bolder pt-5 mb-3">How It Works?</h1>
-    <div class="container custom-container">
+    <div class="container custom-container mt-5 pt-5">
       <div class="row justify-content-center">
         <!-- Card 1 -->
         <div class="col-lg-3 col-md-6 mb-4">
@@ -115,13 +117,13 @@
 
 
 
-<footer id="footer" class="footer">
+<footer id="footer" class="footer mt-5 pt-5">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
         <div class="logo-section">
-          <img src="logo.png" alt="Keletrix Design" class="logo">
-          <p>Site Generator is set of useful templates with fresh layouts.</p>
+          <p>Find and Report Lost or Found
+            Items in Bulan easily</p>
         </div>
       </div>
       <div class="col-md-2">
@@ -159,7 +161,7 @@
     </div>
     <div class="row mt-3">
       <div class="col-md-4">
-        <h5>Get in touch</h5>
+        <h5>Bulan Lost And Found Website</h5>
         <div class="social-icons">
           <a href="#"><i class="fab fa-facebook"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
@@ -187,7 +189,10 @@
 <script>
 import { Head, Link } from '@inertiajs/vue3';
 export default {
-    name: 'welcome'
+    name: 'welcome',
+    components: {
+      Link, Head
+    }
 }
 </script>
 <style lang="css" scoped>

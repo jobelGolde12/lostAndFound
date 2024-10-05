@@ -22,7 +22,7 @@ section{
 .has-paint::after{
     content: '';
     position: absolute;
-    background: url('../../images/paint.png') no-repeat center center;
+    background: url('../images/paint.png') no-repeat center center;
     width: 150px;
     height: 80px;
     top: -5%;
@@ -104,7 +104,7 @@ section{
 
 /* For about us  */
 .stats-section {
-    padding: 60px 0;
+    padding: 60px 20px;
   }
   
   .stats-card {
@@ -151,7 +151,11 @@ section{
     max-width: 1200px;
   }
   
+  #howItsWork{
+    width: 100vw;
+    height: auto;
 
+  }
   
   .footer {
     background-color: #1f1f1f;
@@ -159,9 +163,6 @@ section{
     color: #fff;
   }
   
-  .footer .logo {
-    width: 150px; /* Adjust logo width accordingly */
-  }
   
   .footer h5 {
     color: #ffffff;
@@ -223,9 +224,32 @@ section{
   
 
 @media (max-width: 768px) {
+    .logo h4{
+        font-size: 1rem;
+    }
     .about-image-container{
         margin-bottom: 5rem;
     }
+    #hero-content h1{
+      font-size: 2rem;
+
+    }
+    #hero-content p{
+      font-size: .8rem;
+    }
+    .has-paint::after{
+      content: '';
+      position: absolute;
+      background: url('../images/paint.png') no-repeat center center;
+      width: 150px;
+      height: 60px;
+      top: -20%;
+      left: -10%;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      transform: rotate(10deg);
+  }
     .stats-card img {
       width: 40%;
     }
@@ -244,6 +268,9 @@ section{
     
       .subscribe-form input {
         width: 70%;
+      }
+      #howItsWork{
+        margin-top: 15rem;
       }
     
       .footer .text-md-end {

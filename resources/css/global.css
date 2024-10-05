@@ -4,7 +4,14 @@ body{
 :root{
     --clr-primary: #fff;
     --clr-secondary: #333;
+    --clr-hover: #0482b033;
 }
 html{
     scroll-behavior: smooth;
+}
+.pointer{
+    cursor: pointer;
+}
+.hover:hover{
+    color: var(--clr-hover);
 }

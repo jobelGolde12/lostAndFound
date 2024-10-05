@@ -22,6 +22,9 @@ class RegisteredUserController extends Controller
     {
         return Inertia::render('Auth/Register');
     }
+    public function index(){
+        return inertia('Login');
+    }
 
     /**
      * Handle an incoming registration request.

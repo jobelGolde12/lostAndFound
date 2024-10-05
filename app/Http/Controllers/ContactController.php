@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class ContactController extends Controller
 {
@@ -10,6 +11,6 @@ class ContactController extends Controller
 
     }
     public function index(){
-        
+        return inertia('ContactPage');
     }
 }
