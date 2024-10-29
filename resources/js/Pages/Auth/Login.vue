@@ -120,6 +120,7 @@ const submit = () => {
                 <h6 class="text-dark text-center mt-4 mb-4">Or</h6>
 
                 <button class="btn btn-light d-flex flex-row gap-1 justify-content-center align-items-center"> <img src="../../../images/google.png" alt="" class="google d-block"><span class="d-block">Google</span></button>
+                <p class="text-dark fw-light mt-3 text-center">Didn't have an account? | <Link :href="route('register')"> Signup </Link></p>
             </div>
         </form>
     </GuestLayout>
