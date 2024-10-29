@@ -1,6 +1,6 @@
 
 html{
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
 section{
     width: 100vw;
@@ -175,7 +175,7 @@ section{
     color: #999;
   }
   
-  .footer .list-unstyled a {
+  .footer .list-unstyled a ,   .footer .list-unstyled .link{
     color: #999;
     text-decoration: none;
     display: block;

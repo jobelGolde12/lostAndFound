@@ -10,6 +10,8 @@
                     <Link :href="route('contactPage')" class="text-dark text-decoration-none">Contact</Link>
                     <Link :href="route('login')" class="text-dark text-decoration-none">Login</Link>
                     <Link :href="route('register')" class=" text-decoration-none bg-dark text-light px-2 py-1 signup-link">Signup</Link>
+    <Link :href="route('admin')" >Admin </Link>
+
             </div>
 
             <div class="bi bi-list fs-1 fw-bolder pointer hover d-block d-lg-none"></div>
@@ -25,8 +27,8 @@
                         <p class="text-dark text-center ">Join others in Bulan and report lost or found items with just a few clicks.</p>
 
                         <div class="action-button container d-flex flex-row align-items-center justify-content-center gap-5 pt-3 px-5">
-                            <a href="#" class="text-decoration-none report-lost-item-link px-2 py-2">Report Lost Item <i class="bi bi-arrow-right text-dark"></i></a>
-                            <a href="#" class="text-decoration-none text-light bg-dark px-2 py-2 report-found-item-link">Report Found Item</a>
+                            <a href="#" class="text-decoration-none report-lost-item-link px-3 py-2">Report Lost Item <i class="bi bi-arrow-right text-dark"></i></a>
+                            <Link :href="route('dashboard')" class="text-decoration-none text-light bg-dark px-3 py-2 report-found-item-link">Report Found Item</Link>
                         </div>
 
                     <div class="hero-image-container mt-5 p-0 pt-5 bg-light d-flex flex-row align-items-center ps-0 ms-0">
@@ -120,38 +122,37 @@
 <footer id="footer" class="footer mt-5 pt-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <div class="logo-section">
           <p>Find and Report Lost or Found
             Items in Bulan easily</p>
         </div>
-      </div>
-      <div class="col-md-2">
-        <h5>Download</h5>
+      </div> -->
+      <div class="col-md-3">
+        <h5>Contact Info.</h5>
         <ul class="list-unstyled">
-          <li><a href="#">Windows app</a></li>
-          <li><a href="#">Mac app</a></li>
-          <li><a href="#">Linux app</a></li>
-          <li><a href="#">Desktop app</a></li>
+          <li><a href="#">jobelgolde43@gmail.com</a></li>
+          <li><a href="#">09930543293</a></li>
+          <li><a href="#">Bonga, Bulan, Sor</a></li>
         </ul>
       </div>
-      <div class="col-md-2">
-        <h5>Products</h5>
+      <div class="col-md-3">
+        <h5>Social media</h5>
         <ul class="list-unstyled">
-          <li><a href="#">Web</a></li>
-          <li><a href="#">App</a></li>
-          <li><a href="#">Software</a></li>
-          <li><a href="#">Ecommerce</a></li>
+          <li><a href="#"><i class="bi bi-facebook text-light me-1"></i>Facebook</a></li>
+          <li><a href="#"><i class="bi bi-twitter text-light me-1"></i>Twitter</a></li>
+          <li><a href="#"><i class="bi bi-instagram text-light me-1"></i>Instagram</a></li>
         </ul>
       </div>
-      <div class="col-md-2">
-        <h5>Services</h5>
+      <div class="col-md-3">
+        <h5>Quick Links</h5>
         <ul class="list-unstyled">
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Development</a></li>
+          <li><a href="#hero-content">Home</a></li>
+          <li> <Link :href="route('contactPage')" class="link text-decoration-none">Contact</Link></li>
+          <li><a href="#about">About Us</a></li>
         </ul>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-3">
         <h5>Company</h5>
         <ul class="list-unstyled">
           <li><a href="#">Terms & Conditions</a></li>
@@ -159,7 +160,7 @@
         </ul>
       </div>
     </div>
-    <div class="row mt-3">
+    <div class="row mt-5">
       <div class="col-md-4">
         <h5>Bulan Lost And Found Website</h5>
         <div class="social-icons">
@@ -168,17 +169,12 @@
           <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-      <div class="col-md-8 text-md-end">
+      <!-- <div class="col-md-8 text-md-end">
         <form class="subscribe-form">
           <input type="email" class="form-control" placeholder="Enter email address">
           <button class="btn btn-primary">Subscribe</button>
         </form>
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col text-center">
-        <p>&copy; 2022 Glossy, All rights reserved.</p>
-      </div>
+      </div> -->
     </div>
   </div>
 </footer>
