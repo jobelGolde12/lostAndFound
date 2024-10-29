@@ -10,7 +10,7 @@
                     <Link :href="route('contactPage')" class="text-dark text-decoration-none">Contact</Link>
                     <Link :href="route('login')" class="text-dark text-decoration-none">Login</Link>
                     <Link :href="route('register')" class=" text-decoration-none bg-dark text-light px-2 py-1 signup-link">Signup</Link>
-    <Link :href="route('admin')" >Admin </Link>
+    <!-- <Link :href="route('admin')" >Admin </Link> -->
 
             </div>
 
