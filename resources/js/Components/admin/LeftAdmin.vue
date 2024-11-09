@@ -9,7 +9,7 @@
   
           <a href="#"><i class="bi bi-file-earmark-text"></i> My Collections</a>
 
-          <div class="dropdown my-2 categories-container">
+          <!-- <div class="dropdown my-2 categories-container">
             <button
               class="bg-light dropdown-toggle"
               type="button"
@@ -24,7 +24,7 @@
                 <a href="#"><i class="bi bi-file-earmark-text"></i> My Collections</a>
 
             </ul>
-          </div>
+          </div> -->
           <a href="#"><i class="bi bi-coin"></i> Pricing</a>
           <a href="#"><i class="bi bi-file-earmark-text"></i> My Collections</a>
           <a href="#"><i class="bi bi-file-earmark-text"></i> My Collections</a>

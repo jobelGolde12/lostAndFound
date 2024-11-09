@@ -1,11 +1,10 @@
 <?php
 
-use App\Http\Controllers\Admincontroller;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
-use App\Models\AdminModel;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -17,15 +16,15 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
-
+//aayuson an bug sa user() na method
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    $user = Auth::user();
+    return Inertia::render($user->isAdmin() ? 'Admin' : 'Dashboard', [
+        'is_admin' => $user->isAdmin(),
+    ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-// For admin 
-Route::get('/admin',[Admincontroller::class, 'index'])->name('admin');
 
-// ==============
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
