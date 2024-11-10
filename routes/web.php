@@ -16,14 +16,13 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
-//aayuson an bug sa user() na method
 Route::get('/dashboard', function () {
     $user = Auth::user();
     return Inertia::render($user->isAdmin() ? 'Admin' : 'Dashboard', [
         'is_admin' => $user->isAdmin(),
     ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
-
+ 
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
